@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000080"
+    android:layout_centerInParent="true"
+    android:textAlignment="center">
+
+    <!--    <androidx.appcompat.widget.AppCompatImageButton-->
+    <!--        android:id="@+id/logo"-->
+    <!--        android:layout_width="190dp"-->
+    <!--        android:layout_height="52dp"-->
+    <!--        android:layout_centerInParent="true"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:background="@drawable/halo_black_white"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.583"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/deviceId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <!--    <TextClock-->
+    <!--        android:id="@+id/Date"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="0dp"-->
+    <!--        android:format12Hour="MM/dd/yyyy"-->
+    <!--        app:autoSizeTextType="uniform"-->
+    <!--        android:gravity="center"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="30sp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/time"-->
+    <!--        tools:layout_editor_absoluteX="0dp" />-->
+
+    <TextClock
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh:mm a"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/room"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deviceId"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextClock
+        android:id="@+id/Date"
+        android:layout_width="192dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="125dp"
+        android:layout_centerInParent="true"
+        android:format12Hour="MM/dd/yyyy"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/battery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginRight="130dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="100dp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginLeft="150dp"
+        android:gravity="center"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="200dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/room"
+        android:layout_width="373dp"
+        android:layout_height="113dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="40sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
